@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageHub Registration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <img src="logo.ico" alt="VillageHub Logo">
+        <h1>Join Your Community</h1>
+    </header>
+    <main>
+        <img src="background.jpg" alt="Village Landscape">
+        <form action="register.php" method="post">
+            <label for="villageId">Village ID:</label>
+            <input type="text" id="villageId" name="villageId" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the <a href="terms-of-service.php">Terms of Service</a>
+            </label>
+
+            <button type="submit">Register</button>
+        </form>
+        <img src="illustrations.png" alt="Villagers engaging in community activities">
+    </main>
+    <footer>
+        <a href="login.html">Already have an account? Login</a>
+        <a href="contact-us.php">Contact Us</a>
+    </footer>
+</body>
+</html>

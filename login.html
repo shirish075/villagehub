@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageHub Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <img src="logo.ico" alt="VillageHub Logo">
+        <h1>Connect with your community</h1>
+    </header>
+    <main>
+        <img src="background.jpg" alt="Village Landscape">
+        <form action="login.php" method="post">
+            <label for="username">Village ID:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="remember">Remember me:</label>
+            <input type="checkbox" id="remember" name="remember">
+            <button type="submit">Login</button>
+            <br>
+            
+            <button type="button" onclick="window.location.href='register.php'">Register</button>
+        </form>
+        <img src="illustrations.png" alt="Villagers engaging in community activities">
+    </main>
+    <footer>
+        <a href="register.php">Register</a>
+        <a href="terms-of-service.php">Terms of Service</a>
+        <a href="contact-us.php">Contact Us</a>
+    </footer>
+</body>
+</html>

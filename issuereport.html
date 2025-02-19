@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VillageHub</title>
+  <link rel="stylesheet" type="text/css" href="issue.css">
+</head>
+<body>
+  <header>
+    
+    <div class="logo-container">
+      <!-- <a href="home.php" style="float: right; margin-top: 10px; margin-right: 10px;">Home -->
+        <img src="logo.ico" alt="VillageHub logo">
+        <a href="home.php" style="float: right; margin-top: 10px; margin-right: 10px;"><h1>VillageHub</h1></a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="issuereport.html">Issue Reporting</a></li>
+        <li><a href="issue_tracking.php">Issue Tracking</a></li>
+        <!-- <li><a href="login.html">Login</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <form action="submit_issue.php" method="post" enctype="multipart/form-data">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title"><br>
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description"></textarea><br>
+      <label for="category">Category:</label><br>
+      <select id="category" name="category">
+        <option value="road_repair">Road Repair</option>
+        <option value="water_supply">Water Supply</option>
+        <option value="electricity">Electricity</option>
+        <option value="police">Police</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment"></textarea><br>
+      <label for="photo">Photo:</label><br>
+      <input type="file" id="photo" name="photo"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer>
+    <p>Contact Us: <a href="mailto:info@villagehub.com">info@villagehub.com</a></p>
+    <p>Follow us on social media:</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

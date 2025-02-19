@@ -1,0 +1,87 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #964B00;
+    color: #F5F5DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+main img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+form button {
+    background-color: #2E865F;
+    color: #F5F5DC;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #246543;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #964B00;
+    color: #F5F5DC;
+}
+
+footer a {
+    color: #F5F5DC;
+    text-decoration: none;
+    margin: 0 1rem;
+}
